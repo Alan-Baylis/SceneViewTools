@@ -90,9 +90,9 @@ public static class SceneViewToolController
 		// Set up method parameters for current event
 		object[] parameters = null;
 		if (e.isMouse) {
-			parameters = new object[] { Event.current.button, Event.current.mousePosition };
+			parameters = new object[] { e.button, e.mousePosition, e.delta };
 		} else if (e.isKey) {
-			parameters = new object[] { Event.current.keyCode };
+			parameters = new object[] { e.keyCode, e.modifiers };
 		}
 		
 		// Execute event methods on all SceneViewTool subclasses
