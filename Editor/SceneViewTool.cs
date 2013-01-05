@@ -1,10 +1,6 @@
 using UnityEngine;
 using UnityEditor;
 
-public class SceneViewTool
+public abstract class SceneViewTool
 {
-	void OnMouseDown (int button)
-	{
-
-	}
 }
